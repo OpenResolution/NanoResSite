@@ -13,3 +13,5 @@ netlify
 .idea/
 __pycache__/
 *.pyc
+
+.vscode/
