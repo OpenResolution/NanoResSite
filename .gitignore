@@ -8,3 +8,8 @@ node_modules
 package-lock.json
 yarn.lock
 netlify
+
+# Python
+.idea/
+__pycache__/
+*.pyc
