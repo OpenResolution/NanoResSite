@@ -5,7 +5,13 @@
 
   .navbar {
     text-align: center;
+
     background: rgba(0,0,0,0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    opacity: 1;
   }
 
   .navbar .nav-item-divider {
