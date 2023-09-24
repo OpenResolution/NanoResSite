@@ -9,6 +9,9 @@ package-lock.json
 yarn.lock
 netlify
 
+# build
+theme/
+
 # Python
 .idea/
 __pycache__/
