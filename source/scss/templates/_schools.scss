@@ -1,0 +1,39 @@
+/*----------------------
+ schools
+-----------------------*/
+
+.g-block {
+  overflow: hidden;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .carousel-slider {
+  padding-bottom: 3rem;
+}
+
+.bg-none {
+  background: #fff;
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-track:after, .slick-track:before {
+  content: "";
+  display: table;
+}
