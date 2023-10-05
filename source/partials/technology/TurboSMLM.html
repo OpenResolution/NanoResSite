@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <style>
-    .technology-section {
-      text-align: left;
-    }
 
-    .technology-section .technology-indented-text {
-      text-align: left;
-      font-size: 15px;
-    }
-
-    .technology-section .technology-indented-text-4 {
-      text-align: left;
-      text-indent: 4em;
-    }
-
-
-    .technology-section .technology-img-container img {
-      width: 800px;
-      height: auto;
-      margin: 0 auto;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .technology-section .technology-img-container img:hover {
-      transform: scale(1.5);
-    }
-
-    .technology-section .technology-caption {
+    .technology-caption {
       font-size: 15px;
       color: #555;
       display: flex;
@@ -38,53 +10,48 @@
       align-items: center;
       text-align: left;
     }
-
-    .anchor:target {
-      padding-top: 150px; /* 跳转后离顶部的距离 */
-      margin-top: -100px; /* 跳转后的实际位置 */
-    }
-
   </style>
 </head>
-<body>
-<section id="TurboSMLM" class="technology-section anchor">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="row justify-content-center">
-          <h2 class="section-title">
-            TurboSMLM
-          </h2>
-          <div class="col-lg-12">
-            <div class="project-single-info">
-              <p class="technology-indented-text">
-                <br><br>
-                To generate super-resolution images, Single-molecule localization microscope (SMLM) requires intensive
-                computation process. Current solutions, including commercialized products, mandate a two-step process:
-                first, the acquisition of the dataset, followed by its processing. This sequential approach means users
-                cannot visualize the image in real-time during acquisition, leaving them in the dark about their sample
-                until post-processing.
-                <br><br>
-                Recognizing this issue, we reprogrammed the state-of-the-art SMLM reconstruction algorithm in Taichi-a
-                high-performance parallel computation framework, accelerating the reconstruction speed hundreds of times
-                faster than the serial processing CPU approach. We name this program TurboSMLM. Given TurboSMLM’s
-                superior reconstruction speed surpasses the image acquisition speed, we can process data during
-                acquisition, providing a near real-time image reconstruction on SMLM system. Users could access the
-                super-resolution image while taking images.
-              </p>
 
-<!--              <div class="technology-img-container">-->
-<!--                <img id="technology-img" src="images/technology/xxx.png" alt="technology-img">-->
-<!--              </div>-->
-<!--              <p class="technology-caption">xxxx</p>-->
+<div id="TurboSMLM" class="g-block columns pt-5 pb-5 mt-0 mb-0 bg-none in-view">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 offset-lg-0 order-lg-">
+        <div class="column-bg-color bg- ">
+          <div><h2 class="title s_title secondary_title">Simple Overview</h2>
+            <p class="main_text">
+              To generate super-resolution images, Single-molecule localization microscope (SMLM) requires intensive
+              computation process. Current solutions, including commercialized products, mandate a two-step process:
+              first, the acquisition of the dataset, followed by its processing. This sequential approach means users
+              cannot visualize the image in real-time during acquisition, leaving them in the dark about their sample
+              until post-processing.
+            </p>
+            <p class="main_text">
+              Recognizing this issue, we reprogrammed the state-of-the-art SMLM reconstruction algorithm in Taichi-a
+              high-performance parallel computation framework, accelerating the reconstruction speed hundreds of times
+              faster than the serial processing CPU approach. We name this program TurboSMLM. Given TurboSMLM’s
+              superior reconstruction speed surpasses the image acquisition speed, we can process data during
+              acquisition, providing a near real-time image reconstruction on SMLM system. Users could access the
+              super-resolution image while taking images.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 offset-lg-0 order-lg-">
+        <div class="column-bg-color bg- ">
+          <div>
+            <div style="width: 601px" class="wp-caption aligncenter"><img
+              aria-describedby="caption-attachment-3284" decoding="async" loading="lazy" class="wp-image-3284 size-full"
+              src="" alt=""
+              width="591" height="auto"
+              srcset=""
+              sizes="(max-width: 591px) 100vw, 591px">
+              <p id="caption-attachment-3284" class="technology-caption">
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-</section>
-</body>
-</html>
+</div>
