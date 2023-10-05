@@ -1,36 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <style>
-    .technology-section {
-      text-align: left;
-    }
 
-    .technology-section .technology-indented-text {
-      text-align: left;
-      font-size: 15px;
-    }
-
-    .technology-section .technology-indented-text-4 {
-      text-align: left;
-      text-indent: 4em;
-    }
-
-
-    .technology-section .technology-img-container img {
-      width: 800px;
-      height: auto;
-      margin: 0 auto;
-      display: block;
-      transition: transform 0.5s ease;
-    }
-
-    .technology-section .technology-img-container img:hover {
-      transform: scale(1.5);
-    }
-
-    .technology-section .technology-caption {
+    .technology-caption {
       font-size: 15px;
       color: #555;
       display: flex;
@@ -38,46 +10,41 @@
       align-items: center;
       text-align: left;
     }
-
-    .anchor:target {
-      padding-top: 150px; /* 跳转后离顶部的距离 */
-      margin-top: -100px; /* 跳转后的实际位置 */
-    }
-
   </style>
 </head>
-<body>
-<section id="SPTNET" class="technology-section anchor">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="row justify-content-center">
-          <h2 class="section-title">
-            Single particle tracking network (SPTNET)
-          </h2>
-          <div class="col-lg-12">
-            <div class="project-single-info">
-              <p class="technology-indented-text">
-                <br><br>
-                Single particle tracking network (SPTNET) is a deep neuron network algorithm that simultaneously tracks
-                multiple particles moving at high speed. Meanwhile, SPTNET can output each particle’s diffusion
-                coefficient and Hurst parameter.
-              </p>
-              <div class="technology-img-container">
-                <img id="technology-img" src="images/technology/sptnet-1.png" alt="technology-img">
-              </div>
-              <p class="technology-caption">Figure 4. Diagram of the architecture of SPTnet. The inputs of this neural network is 30
-                or 100 frames of 64 pixels by 64 pixels video. And the output is two diffusion-related parameters: Hurst exponent
-                and generalized diffusion coefficient.</p>
 
+<div id="SPTNET" class="g-block columns pt-5 pb-5 mt-0 mb-0 bg-none in-view">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 offset-lg-0 order-lg-">
+        <div class="column-bg-color bg- ">
+          <div><h2 class="title s_title secondary_title">Simple Overview</h2>
+            <p class="main_text">
+              <br><br>
+              Single particle tracking network (SPTNET) is a deep neuron network algorithm that simultaneously tracks
+              multiple particles moving at high speed. Meanwhile, SPTNET can output each particle’s diffusion
+              coefficient and Hurst parameter.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 offset-lg-0 order-lg-">
+        <div class="column-bg-color bg- ">
+          <div>
+            <div style="width: 601px" class="wp-caption aligncenter"><img
+              aria-describedby="caption-attachment-3284" decoding="async" loading="lazy" class="wp-image-3284 size-full"
+              src="images/technology/sptnet-1.png" alt=""
+              width="591" height="auto"
+              srcset=""
+              sizes="(max-width: 591px) 100vw, 591px">
+              <p id="caption-attachment-3284" class="technology-caption">
+                Diagram of the architecture of SPTnet. The inputs of this neural network is 30
+                or 100 frames of 64 pixels by 64 pixels video. And the output is two diffusion-related parameters: Hurst exponent
+                and generalized diffusion coefficient.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
-</section>
-</body>
-</html>
+</div>
