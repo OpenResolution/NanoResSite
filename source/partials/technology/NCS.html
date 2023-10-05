@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .technology-section {
+      text-align: left;
+    }
+
+    .technology-section .technology-indented-text {
+      text-align: left;
+      font-size: 15px;
+    }
+
+    .technology-section .technology-indented-text-4 {
+      text-align: left;
+      text-indent: 4em;
+    }
+
+
+    .technology-section .technology-img-container img {
+      width: 800px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .technology-section .technology-img-container img:hover {
+      transform: scale(1.5);
+    }
+
+    .technology-section .technology-caption {
+      font-size: 15px;
+      color: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+    }
+
+    .anchor:target {
+      padding-top: 150px; /* 跳转后离顶部的距离 */
+      margin-top: -100px; /* 跳转后的实际位置 */
+    }
+
+  </style>
+</head>
+<body>
+<section id="NCS" class="technology-section anchor">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row justify-content-center">
+          <h2 class="section-title">
+            Noise correction for sCMOS (NCS)
+          </h2>
+          <div class="col-lg-12">
+            <div class="project-single-info">
+              <p class="technology-indented-text">
+                <br><br>
+                Noise correction for sCMOS (NCS) is a denoising algorithm designed specifically for the scientific
+                Complementary Metal–Oxide–Semiconductor (sCMOS) camera. sCMOS have pixel-dependent noise. NCS considers
+                the statistics of individual pixels and denoise the image based on the frequency constraint on the
+                optical system. As a result, NCS maximally preserves the fidelity of the image without introducing any
+                artifacts.
+              </p>
+
+              <div class="technology-img-container">
+                <img id="technology-img" src="images/technology/ncs-1.png" alt="technology-img">
+              </div>
+              <p class="technology-caption"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+</body>
+</html>
