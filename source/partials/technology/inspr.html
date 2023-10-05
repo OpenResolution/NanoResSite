@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .technology-section {
+      text-align: left;
+    }
+
+    .technology-section .technology-indented-text {
+      text-align: left;
+      font-size: 15px;
+    }
+
+    .technology-section .technology-indented-text-4 {
+      text-align: left;
+      text-indent: 4em;
+    }
+
+
+    .technology-section .technology-img-container img {
+      width: 800px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .technology-section .technology-img-container img:hover {
+      transform: scale(1.5);
+    }
+
+    .technology-section .technology-caption {
+      font-size: 15px;
+      color: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .anchor:target {
+      padding-top: 150px;  /* 跳转后离顶部的距离 */
+      margin-top: -100px;   /* 跳转后的实际位置 */
+    }
+
+
+  </style>
+</head>
+<body>
+<section id="inspr" class="technology-section anchor">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="row justify-content-center">
+          <h2 class="section-title">
+            INSPR
+          </h2>
+          <div class="col-lg-12">
+            <div class="project-single-info">
+              <p class="technology-indented-text">
+                <br><br>
+                Traditional 3D SMLM techniques often rely on a pre-determined model, typically built by scanning tiny
+                fluorescent beads along the vertical (z-axis) of the microscope.
+                <br><br>
+
+                However, In situ PSF retrieval (INSPR) has an edge—it constructs a 3D image using the actual data from
+                individual light-emitting molecules. This means it can pinpoint the exact locations of these molecules
+                with incredible accuracy and detail.
+                <br><br>
+                How does it do this? INSPR takes cues from mathematical principles, specifically
+                expectation-maximization, and k-means. It focuses on the precise positions of individual molecules
+                vertically and horizontally.
+                <br><br>
+                Imagine a microscope's lens as the "pupil" through which it sees. The way light passes through this
+                pupil and scatters is described by the point spread function (PSF). INSPR's goal is to understand this
+                light scattering pattern at different depths.
+                <br><br>
+                The INSPR method involves two main steps:
+              </p>
+              <p class="technology-indented-text-4">
+                1.Assignment: It starts with a basic, idealized understanding of light scattering. Then, each detected
+                light pattern from individual molecules is linked to a specific depth based on how closely it matches
+                this ideal.
+              </p>
+              <p class="technology-indented-text-4">
+                2.Update: All the light patterns at a specific depth are grouped together and refined to create a
+                clearer, more accurate model of light scattering at that depth.
+              </p>
+              <p class="technology-indented-text">
+                These two steps are repeated repeatedly, each time refining the model, until the method produces a
+                consistent and detailed 3D image.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="technology-img-container">
+    <img id="technology-img" src="images/technology/inspr-1.png" alt="technology-img">
+  </div>
+  <p class="technology-caption">Figure 2. Concept of INSPR.</p>
+</section>
+</body>
+</html>
