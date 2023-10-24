@@ -78,39 +78,42 @@ h5.subtitle {
   border: 1px solid rgba(255, 255, 255, 0.05);
   margin-bottom: 10px;
 
+  background: $light;
+
   i {
+    color: $black;
     font-size: 70px;
     margin-bottom: 30px;
     display: block;
-    color: $light;
   }
 
   h3 {
-    color: $light;
+    color: $black;
     transition: 0.3s;
   }
 
-  p {
-    color: $border-color;
+  p,li,a{
+    // left align for the description
+    text-align: left;
+    color: $black;
     margin-top: 15px;
     transition: 0.3s;
   }
 
+  i{
+    color: $black;
+    // in sync with others
+    transition: 0.3s;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  
   &:hover {
-    background: $light;
-    border-color: transparent;
-
-    i {
-      color: $primary-color;
-    }
-
-    h3 {
-      color: #111;
-    }
-
-    p {
-      color: #111;
-    }
+    -webkit-box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
   }
 }
 
@@ -119,4 +122,20 @@ h5.subtitle {
   border: 10px solid $light;
   z-index: 9999;
 
+}
+
+/* when jumping to a section, scroll up a bit to 
+  prevent the content from being covered by the nav bar
+*/
+.scroll-offset {
+  /* magic number for now, should be relative to
+    height of the nav bar
+  */
+  scroll-margin-top: 160px;
+}
+
+.vertical-align{
+  display: flex;
+  align-items: center;
+  /* Align vertical */
 }
