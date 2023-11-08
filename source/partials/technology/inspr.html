@@ -19,45 +19,54 @@
       <div class="col-12 col-lg-6 offset-lg-0 order-lg-">
         <div class="column-bg-color bg- ">
           <div><h2 class="title s_title secondary_title">INSPR</h2>
-            <p class="main_text">
-              <br><br>
-              Traditional 3D SMLM techniques often rely on a pre-determined model, typically built by scanning tiny
-              fluorescent beads along the vertical (z-axis) of the microscope.
-              <br><br>
-
-              However, In situ PSF retrieval (INSPR) has an edge—it constructs a 3D image using the actual data from
-              individual light-emitting molecules. This means it can pinpoint the exact locations of these molecules
-              with incredible accuracy and detail.
-              <br><br>
-              How does it do this? INSPR takes cues from mathematical principles, specifically
-              expectation-maximization, and k-means. It focuses on the precise positions of individual molecules
-              vertically and horizontally.
-              <br><br>
-              Imagine a microscope's lens as the "pupil" through which it sees. The way light passes through this
-              pupil and scatters is described by the point spread function (PSF). INSPR's goal is to understand this
-              light scattering pattern at different depths.
-              <br><br>
-              The INSPR method involves two main steps:
-            </p>
-            <p class="main_text">
-              &nbsp;&nbsp;&nbsp;&nbsp;1.Assignment: It starts with a basic, idealized understanding of light scattering. Then, each detected
-              light pattern from individual molecules is linked to a specific depth based on how closely it matches
-              this ideal.
-            </p>
-            <p class="main_text">
-              &nbsp;&nbsp;&nbsp;&nbsp;2.Update: All the light patterns at a specific depth are grouped together and refined to create a
-              clearer, more accurate model of light scattering at that depth.
-            </p>
-            <p class="main_text">
-              These two steps are repeated repeatedly, each time refining the model, until the method produces a
-              consistent and detailed 3D image.
-            </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
       <div class="col-12 col-lg-6 offset-lg-0 order-lg-">
+        <div>
+          <p class="main_text">
+            <br>
+            Traditional 3D SMLM techniques often rely on a pre-determined model, typically built by scanning tiny
+            fluorescent beads along the vertical (z-axis) of the microscope.
+            <br><br>
+
+            However, In situ PSF retrieval (INSPR) has an edge—it constructs a 3D image using the actual data from
+            individual light-emitting molecules. This means it can pinpoint the exact locations of these molecules
+            with incredible accuracy and detail.
+            <br><br>
+            How does it do this? INSPR takes cues from mathematical principles, specifically
+            expectation-maximization, and k-means. It focuses on the precise positions of individual molecules
+            vertically and horizontally.
+            <br><br>
+            Imagine a microscope's lens as the "pupil" through which it sees. The way light passes through this
+            pupil and scatters is described by the point spread function (PSF). INSPR's goal is to understand this
+            light scattering pattern at different depths.
+            <br><br>
+            The INSPR method involves two main steps:
+          </p>
+          <p class="main_text">
+            &nbsp;&nbsp;&nbsp;&nbsp;1.Assignment: It starts with a basic, idealized understanding of light scattering. Then, each detected
+            light pattern from individual molecules is linked to a specific depth based on how closely it matches
+            this ideal.
+          </p>
+          <p class="main_text">
+            &nbsp;&nbsp;&nbsp;&nbsp;2.Update: All the light patterns at a specific depth are grouped together and refined to create a
+            clearer, more accurate model of light scattering at that depth.
+          </p>
+          <p class="main_text">
+            These two steps are repeated repeatedly, each time refining the model, until the method produces a
+            consistent and detailed 3D image.
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 offset-lg-0 order-lg-1">
         <div class="column-bg-color bg- ">
           <div>
+            <br>
             <div style="width: 601px" class="wp-caption aligncenter"><img
               aria-describedby="caption-attachment-3284" decoding="async" loading="lazy" class="wp-image-3284 size-full"
               src="images/technology/inspr-1.png" alt=""
